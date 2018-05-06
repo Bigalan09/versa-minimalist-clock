@@ -1,0 +1,40 @@
+.background {
+  viewport-fill: #111111;
+}
+
+.label {
+  fill: white;
+  font-size:20;
+  font-family: "Colfax-Light";
+  text-anchor: "middle";
+}
+
+.icon {
+  fill: white;
+  width: 30;
+  height: 30;
+}
+
+#timeLabel {
+  fill: fb-dark-gray;
+}
+
+#dateLabel {
+  fill: fb-dark-gray;
+}
+
+#batteryLabel {
+  text-length: 4;
+}
+
+#hrLabel {
+  text-length: 3;
+}
+
+#leftActivityLabel {
+  text-length: 5;
+}
+
+#rightActivityLabel {
+  text-length: 5;
+}

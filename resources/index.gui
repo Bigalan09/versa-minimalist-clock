@@ -1,0 +1,54 @@
+<svg class="background">
+  <svg id="clock">
+    <g>
+      <text id="timeLabel" x="50%" y="50%+5"
+      font-size="80" font-family="Colfax-Thin"
+      text-anchor="middle" text-length="32">00 00</text>
+    </g>
+    <g>
+      <text id="dateLabel" x="50%" y="50%+37"
+      font-size="25" font-family="Colfax-Medium"
+      text-anchor="middle" text-length="50">Today</text>
+    </g>
+  </svg>
+  <svg class="analog-clock" y="-15">
+    <g id="mins" pointer-events="visible" transform="translate(50%,50%)">
+      <rect x="-3" y="-95" width="7" height="100" fill="#d5d5d5" />
+    </g>
+    <g id="hours" pointer-events="visible" transform="translate(50%,50%)">
+      <rect x="0" y="-65" width="3" height="65" fill="#f5f5f5" />
+    </g>
+    <g id="secs" pointer-events="visible" transform="translate(50%,50%)">
+      <rect x="0" y="-80" width="2" height="120" fill="#ff0000" />
+    </g>
+    <circle cx="50%" cy="50%" r="8" fill="#ff0000" />
+  </svg>
+  <section y="15" height="90">
+    <section x="15" width="100%-25" height="100%">
+      <section width="50%">
+        <image id="batteryIcon" class="icon" href="icons/battery_solid_24px.png" load="sync">
+        </image>
+        <text x="17" id="batteryLabel" class="label" />
+      </section>
+      <section x="50%" width="50%">
+        <image x="100%-30" id="rightActivityIcon" class="icon" href="icons/stat_steps_solid_24px.png" load="sync">
+        </image>
+        <text x="100%-17" id="rightActivityLabel" class="label" pointer-events="visible" />
+      </section>
+    </section>
+  </section>
+  <section y="100%-65" height="90">
+    <section x="15" width="100%-25" height="100%">
+      <section width="50%">
+        <image id="leftActivityIcon" class="icon" href="icons/stat_elevationGain_solid_24px.png" load="sync">
+        </image>
+        <text x="10%" id="leftActivityLabel" class="label" pointer-events="visible" />
+      </section>
+      <section x="50%" width="50%">
+        <image x="100%-30" id="hrIcon" class="icon" href="icons/stat_hr_solid_24px.png" load="sync">
+        </image>
+        <text x="90%" id="hrLabel" class="label" />
+      </section>
+    </section>
+  </section>
+</svg>
